@@ -96,7 +96,7 @@ The version numbers of the major Python packages that were used for writing this
 Jupyter notebooks allow us to have everything in one place: Our code, the results from executing the code, plots of our data, and documentation that supports the handy Markdown and powerful LaTeX syntax!
 Notebooks are provided in **notebooks** folder. You can run the notebooks using Jupyter Notebook server.
 
-![Jupyter Example](./images/ipynb_ex1.png)
+![Jupyter Example](./notebooks/images/ipynb_ex1.png)
 
 We can use the **conda** command if we have Anaconda or Miniconda installed:
 
@@ -121,6 +121,6 @@ Jupyter will start in our default browser (typically running at [http://localhos
 
 - use the Table of Contents to navigate through the notebooks
 
-![Jupyter File Explorer](./images/ipynb_ex2.png)
+![Jupyter File Explorer](./notebooks/images/ipynb_ex2.png)
 
 For more information about the Jupyter notebook, I recommend the [Jupyter Beginner Guide](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html) and [Jupyter Notebook Basics](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html).
