@@ -7,9 +7,10 @@ flake8
 autopep8
 lxml
 requests
-kattis-cli
 pandas
 numpy
 matplotlib
 scipy
 scikit-learn
+pyarrow
+Flask
