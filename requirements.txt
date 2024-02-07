@@ -12,5 +12,4 @@ numpy
 matplotlib
 scipy
 scikit-learn
-pyarrow
 Flask
