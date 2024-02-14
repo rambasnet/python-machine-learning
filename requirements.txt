@@ -16,3 +16,5 @@ pyarrow
 Flask
 openpyxl
 py-openaq
+seaborn
+gunicorn

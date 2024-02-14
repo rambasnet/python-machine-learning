@@ -150,5 +150,6 @@ winenv $container run -it --rm \
     -v "$ZSH_HISTORY:$USER_HOME/.zsh_history" \
     -v "$KATTISRC:$USER_HOME/.kattisrc" \
     -h debian \
+    -p 5555:5555 \
     "$CONTAINER_TAG" \
     "${args[@]}"

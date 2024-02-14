@@ -38,6 +38,9 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
     -p https://github.com/zsh-users/zsh-autosuggestions \
     -p https://github.com/zsh-users/zsh-completions
 
+# Install heroku cli
+RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
 USER user
 
 CMD zsh
