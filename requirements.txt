@@ -19,3 +19,6 @@ py-openaq
 seaborn
 gunicorn
 graphviz
+lime
+shap
+eli5
