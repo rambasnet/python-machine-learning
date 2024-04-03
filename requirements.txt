@@ -22,3 +22,5 @@ graphviz
 lime
 shap
 eli5
+nltk
+pyprind
