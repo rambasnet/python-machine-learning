@@ -17,7 +17,3 @@ class TestHello(unittest.TestCase):
     def test1_answer(self) -> None:
         """Test hello.py answer function"""
         self.assertEqual(answer(), 'Hello World!', "Test failed...")
-
-
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
