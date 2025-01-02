@@ -10,7 +10,6 @@ __author__ = "Ram Basnet"
 __copyright__ = "Copyright 2021"
 __license__ = "MIT"
 
-import sys
 from cold import answer, answer1
 
 
