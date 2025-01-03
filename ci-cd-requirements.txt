@@ -1,5 +1,0 @@
-pytest
-mypy
-flake8
-hypothesis
-pytest-cov

@@ -1,6 +1,5 @@
 # Python Machine Learning Notebooks
 
-![Tests](https://github.com/rambasnet/python-machine-learning/actions/workflows/ci-test.yml/badge.svg)
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](#)
 [![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE.txt)
 
