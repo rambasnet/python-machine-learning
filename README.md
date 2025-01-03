@@ -3,6 +3,11 @@
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](#)
 [![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE.txt)
 
+## Textbook
+
+Most of the notebooks and source code in this repository are based on the book:
+**Machine Learning with PyTorch and Scikit-Learn** by Sebastian Raschka, Yuxi (Hayden) Liu and Vahid Mirjalili.
+
 ## Setting up Development Environment
 
 This repository uses Docker container with all the required packages and libraries to run the code and jupyter notebooks. You can use the provided Dockerfile to build the image and run the container. The Dockerfile is provided in the root of the repository.
@@ -13,7 +18,7 @@ This repository uses Docker container with all the required packages and librari
 - see [Docker Installation](https://docs.docker.com/get-docker/)
 
 ```bash
-   bash run.sh # run interactive container/Terminal
+   bash run-docker.sh # run interactive container/Terminal
    bash run-jupyter.sh # run jupyter notebook server
 ```
 
@@ -79,7 +84,7 @@ The version numbers of the major Python packages that were used for writing this
 - [scikit-learn](http://scikit-learn.org/stable/) >= 0.22.0
 - [matplotlib](http://matplotlib.org) >= 3.1.0
 - [pandas](http://pandas.pydata.org) >= 0.25.3
-- you can use python_environment_check.py file to check if correct version of required packages are installed
+- you can use `python_environment_check.py` file to check if correct version of required packages are installed
 
 ```bash
     conda activate ml
