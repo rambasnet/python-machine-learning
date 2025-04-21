@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request
-from wtforms import Form, TextAreaField, validators
 import pickle
 import sqlite3
 import os
+from pathlib import Path
+from flask import Flask, render_template, request
+from wtforms import Form, TextAreaField, validators
 import numpy as np
 
 # import HashingVectorizer from local dir
@@ -15,7 +16,8 @@ cur_dir = os.path.dirname(__file__)
 clf = pickle.load(open(os.path.join(cur_dir,
                                     'pkl_objects',
                                     'classifier.pkl'), 'rb'))
-db = os.path.join(cur_dir, 'reviews.sqlite')
+# db = os.path.join(cur_dir, 'reviews.sqlite')
+db = Path(cur_dir) / 'reviews.sqlite'
 
 
 def initialize_db():

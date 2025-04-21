@@ -6,5 +6,10 @@
   <body>
     <h1>My first app</h1>
     <div>Hi, this is my first Flask web app!</div>
+    <div>What's your name?</div>
+    <form method="post" action="/hello">
+      <input type="text" name="sayhello" />
+      <input type="submit" value="Say Hello" name="submit_btn" />
+    </form>
   </body>
 </html>
