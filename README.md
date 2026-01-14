@@ -14,21 +14,39 @@ This repository uses Docker container with all the required packages and librari
 
 ### Build and run Provided Docker File
 
-- install Docker on your machine
+- install Docker and docker-compose on your machine
 - see [Docker Installation](https://docs.docker.com/get-docker/)
+- clone this repository
+- change .env file if needed
 
 ```bash
-   bash run-docker.sh # run interactive container/Terminal
-   bash run-jupyter.sh # run jupyter notebook server
+    git clone <repository_url>
+    cd python-machine-learning
+    docker-compose up --build -d # build and run container in detached mode
+    docker ps # list running containers
+    docker exec -it ml zsh # access the container
 ```
 
-### Installing Python Packages
+- to run jupyter notebook server inside the container
+
+```bash
+    bash start-jupyter.sh
+```
+
+- copy the URL (http://127.0.0.1:8888/?token=<token>) with token and paste it in your browser to access jupyter notebook
+
+- to stop the container
+
+```bash
+    docker-compose down
+```
+
+### Manually Installing Python Packages
 
 This notebook and the original book is written for Python version `>= 3.7.0`, and it is recommended
 you use the most recent version of Python 3 and the machine learning packages and libraries that are currently available.
 
 - update the requirements.txt file to include the required packages
-
 
 ## Anaconda/Miniconda
 
@@ -77,7 +95,7 @@ Throughout this book, we will mainly use NumPy's multi-dimensional arrays to sto
 
 ### Manually Install Core Packages
 
-The version numbers of the major Python packages that were used for writing this book are listed below. Please make sure that the version numbers of your installed packages are equal to, or greater than, those version numbers to ensure the code examples run correctly:
+The version numbers of the major Python packages that were used for writing this notebook are listed below. Please make sure that the version numbers of your installed packages are equal to, or greater than, those version numbers to ensure the code examples run correctly:
 
 - [NumPy](http://www.numpy.org) >= 1.17.4
 - [SciPy](http://www.scipy.org) >= 1.3.1
@@ -117,7 +135,7 @@ We can use the **conda** command if we have Anaconda or Miniconda installed:
 - to open a Jupyter notebook, we `cd` to the directory that contains your notebooks, e.g,.
 
 ```bash
-    cd ~/Python-Machine-Learning
+    cd ~/python-machine-learning
     bash run-jupyter.sh
 ```
 

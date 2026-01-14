@@ -40,4 +40,5 @@ RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 USER user
 
-CMD zsh
+ENV PATH="${HOME}/.local/bin:$PATH"
+CMD ["/bin/bash"]
