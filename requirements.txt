@@ -17,3 +17,4 @@ shap
 eli5
 nltk
 pyprind
+IPython
