@@ -5,16 +5,17 @@ app = Flask(__name__)
 
 
 class HelloForm(Form):
-    sayhello = TextAreaField('', [validators.DataRequired()])
+    sayhello = TextAreaField(
+        '', [validators.DataRequired()], default="enter something")
 
 
 @app.route('/')
 def index():
-    form = HelloForm(request.form)
+    form = HelloForm()
     return render_template('first_app.html', form=form)
 
 
-@app.route('/hello', methods=['POST'])
+@app.route('/hello', methods=['POST', 'GET'])
 def hello():
     form = HelloForm(request.form)
     if request.method == 'POST' and form.validate():

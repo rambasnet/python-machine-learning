@@ -27,19 +27,16 @@ def update_model(db_path, model, batch_size=10000):
     conn.close()
     return model
 
+
 cur_dir = os.path.dirname(__file__)
 
 clf = pickle.load(open(os.path.join(cur_dir,
                   'pkl_objects',
-                  'classifier.pkl'), 'rb'))
+                                    'classifier.pkl'), 'rb'))
 db = os.path.join(cur_dir, 'reviews.sqlite')
 
 clf = update_model(db_path=db, model=clf, batch_size=10000)
 
-# Uncomment the following lines if you are sure that
-# you want to update your classifier.pkl file
-# permanently.
-
-# pickle.dump(clf, open(os.path.join(cur_dir,
-#             'pkl_objects', 'classifier.pkl'), 'wb')
-#             , protocol=4)
+# save the pickle file
+pickle.dump(clf, open(os.path.join(cur_dir,
+                                   'pkl_objects', 'classifier.pkl'), 'wb'), protocol=4)

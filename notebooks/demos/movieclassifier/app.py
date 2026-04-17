@@ -91,6 +91,8 @@ def feedback():
     return render_template('thanks.html')
 
 
+initialize_db()
+
 if __name__ == '__main__':
     initialize_db()
     app.run(debug=True)
